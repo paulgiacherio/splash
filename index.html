@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>paulgiacherio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        *{margin:0;padding:0;}
+        body{
+            background:#000;
+            overflow:hidden;
+            min-height:100%;}
+        
+        @-webkit-keyframes red{
+            0% {-webkit-transform: rotate(0deg) translate(-40px) rotate(0deg) scale(1,1);}
+            50% {-webkit-transform: rotate(-180deg) translate(-40px) rotate(-180deg) scale(1,1.33);}
+            100% {-webkit-transform: rotate(-360deg) translate(-40px) rotate(-360deg) scale(1,1);}
+        }
+        @-moz-keyframes red{
+            0% {-moz-transform: rotate(0deg) translate(-40px) rotate(0deg) scale(1,1);}
+            50% {-moz-transform: rotate(-180deg) translate(-40px) rotate(-180deg) scale(1,1.33);}
+            100% {-moz-transform: rotate(-360deg) translate(-40px) rotate(-360deg) scale(1,1);}
+        }
+        
+      
+        @-webkit-keyframes green{
+            0% {-webkit-transform: rotate(0deg) translate(30px) rotate(0deg) scale(1,1);opacity:1}
+            66% {-webkit-transform: rotate(180deg) translate(30px) rotate(-180deg) scale(1,1.33);opacity:.33}
+            100% {-webkit-transform: rotate(360deg) translate(30px) rotate(-360deg) scale(1,1);opacity:1}
+        }
+        @-moz-keyframes green{
+            0% {-moz-transform: rotate(0deg) translate(30px) rotate(0deg) scale(1,1);opacity:1;}
+            66% {-moz-transform: rotate(180deg) translate(30px) rotate(-180deg) scale(1,1.33);opacity:.33;}
+            100% {-moz-transform: rotate(360deg) translate(30px) rotate(-360deg) scale(1,1);opacity:1;}
+        }
+        
+
+        @-webkit-keyframes blue{
+            0% {-webkit-transform: rotate(0deg) translate(30px) rotate(0deg) scale(1,1);}
+            33% {-webkit-transform: rotate(180deg) translate(30px) rotate(-180deg) scale(1.66,1);}
+            100% {-webkit-transform: rotate(360deg) translate(30px) rotate(-360deg) scale(1,1);}
+        }
+        @-moz-keyframes blue{
+            0% {-moz-transform: rotate(0deg) translate(30px) rotate(0deg) scale(1,1);}
+            33% {-moz-transform: rotate(180deg) translate(30px) rotate(-180deg) scale(1.66,1);}
+            100% {-moz-transform: rotate(360deg) translate(30px) rotate(-360deg) scale(1,1);}
+        }
+        
+
+        #red,#green,#blue{
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:400px;
+            height:400px;
+            margin:-200px 0 0 -200px;
+            }
+
+
+
+        #red{
+            -webkit-animation:7s red linear infinite;
+            -moz-animation:7s red linear infinite;
+             background-image: -moz-radial-gradient(50% 50%, circle contain, rgba(222, 75, 218, .75), rgba(222, 75, 218, 0) 100%);
+            background-image: -webkit-radial-gradient(50% 50%, circle contain, rgba(222, 75, 218, .75), rgba(222, 75, 218, 0) 100%);         
+        }
+
+        #blue{
+            -webkit-animation:blue 6s linear infinite;
+            -moz-animation:blue 6s linear infinite;
+            background-image: -webkit-radial-gradient(50% 50%, circle contain, rgba(86, 173, 223, .75), rgba(86, 173, 223, 0) 100%);
+            background-image: -moz-radial-gradient(50% 50%, circle contain, rgba(86, 173, 223, .75), rgba(86, 173, 223, 0) 100%);           
+        }
+
+        #green{
+            -webkit-animation:green 8s linear infinite;
+            -moz-animation:green 8s linear infinite;
+            background-image: -webkit-radial-gradient(50% 50%, circle contain, rgba(210, 222, 12, .75), rgba(210, 222, 12, 0) 100%);
+            background-image: -moz-radial-gradient(50% 50%, circle contain, rgba(210, 222, 12, .75), rgba(210, 222, 12, 0) 100%);          
+        }
+        
+
+        #header{
+            position:absolute;
+            bottom:33px;
+            left:0;
+            width:100%;
+            font-family: 'Courier New', sans-serif;         
+        }
+
+        #header h1{
+            font-size:33px;
+            border-bottom:1px solid #222;
+            color:#555;
+            margin:0 33px;
+            font-weight:normal;
+           
+        }
+     
+
+        #email{
+            font-size:12px;
+            line-height:18px;
+            color:#999;
+            font-family:'Courier New';
+            position:absolute;
+            right:33px;
+            top:33px;
+            text-decoration:none;
+            -moz-transition: all 0.2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            z-index:100;
+        }
+        
+        #email:hover{
+                color:#fff;
+        }
+       
+
+       
+        
+</style>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1> PG </h1>
+    </div>
+    
+    <a href="mailto:paulgiacherio@gmail.com" id="email">paulgiacherio@gmail.com</a>
+    
+    <div id="blue"></div>
+    <div id="red"></div>
+    <div id="green"></div>
+       
+
+</body>
+</html>
